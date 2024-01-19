@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us on WhatsApp</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #25d366; /* WhatsApp Green */
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #128c7e; /* Darker shade of WhatsApp Green */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Contact Us on WhatsApp</h1>
+    <form>
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <input type="tel" id="phone" placeholder="Your Phone Number" required>
+      <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="button" onclick="sendMessage()">Send on WhatsApp</button>
+    </form>
+  </div>
+
+  <script>
+    function sendMessage() {
+      var name = encodeURIComponent(document.getElementById('name').value);
+      var email = encodeURIComponent(document.getElementById('email').value);
+      var phone = encodeURIComponent('+2349158880623'); // Set the WhatsApp number here
+      var message = encodeURIComponent(document.getElementById('message').value);
+
+      // Validate the form fields (you can add more validation as needed)
+
+      // Construct the WhatsApp URL with the predefined message
+      var whatsappUrl = `https://wa.me/${phone}?text=Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+
+      // Redirect to WhatsApp
+      window.location.href = whatsappUrl;
+    }
+  </script>
+
+</body>
+</html>

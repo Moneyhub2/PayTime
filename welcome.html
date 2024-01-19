@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,600;1,500&family=Poppins:wght@400;600&display=swap');
+
+        * {
+             padding: 0;
+             margin: 0;
+             font-family: 'Poppins', sans-serif;
+             
+        }
+        body {
+            background: #b4aeae;
+        }
+        .top {
+            width: 100%;
+            height: 40px;
+            position: fixed;
+            top: 0;
+            background-color:#1A2B34;
+            color: white ;
+        }
+        .top h2 {
+            text-align: center;
+        }
+        .notice {
+            width: 90%;
+            height: 25px;
+            margin: 0 auto;
+            border-radius: 4px;
+            background:#1A2B34;
+            color: rgb(255, 140, 0);
+        }
+
+        .dash {
+            width: 93%;
+            height: 180px;
+            /* border: 2px solid #1A2B34; */
+            margin: 0 auto;
+            display: flex; /* Use flexbox */
+            flex-direction: row; /* Arrange child elements horizontally */
+            align-items: center; /* Center vertically */
+            justify-content: center; /* Center horizontally */
+            margin-top: 18vh; /* Use viewport height to center vertically */
+            border-radius: 14px;
+            position: relative;
+            top: -110px;
+        }
+        .trans-container {
+            width: 93%;
+            height: 140px;
+            background: #1A2B34;
+            margin: 0 auto;
+            overflow: hidden; /* Hide overflow content */
+            /* border: 5px solid  rgb(252, 106, 1); */
+        }
+
+        .trans {
+            animation: scroll 27s linear infinite; /* Create a scrolling animation */
+        }
+        .dash {
+            width: 93%;
+            height: 180px;
+            background:  #1A2B34;
+            margin: 0 auto;
+            display: flex; /* Use flexbox */
+            flex-direction: row; /* Arrange child elements horizontally */
+            align-items: center; /* Center vertically */
+            justify-content: center; /* Center horizontally */
+            margin-top: 18vh; /* Use viewport height to center vertically */
+            border-radius: 14px;
+            position: relative;
+            top: -130px;
+        }
+        .dash h2 {
+            padding-left: 17px;
+            padding-top: 10px;
+        }
+        .trans p {
+            width: 93%;
+            height: 30px;
+            background:#fff1f1;
+            margin: 0 auto;
+            display: block;
+            padding-top: 15px;
+            padding-left: 10px;
+            border: 1px solid #1A2B34;
+            color: rgb(0, 0, 0);
+            
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+
+        .details {
+            width: 95%;
+            height: fit-content;
+            margin: 0 auto;
+            display: block;
+            /* background: #000; */
+            position: relative;
+            top: -90px;
+        }
+        .details input, button {
+            width: 90%;
+            padding: 10px;
+            display: block;
+            margin: 0 auto;
+            border: 3px solid black;
+        }
+
+        button {
+            background: #1A2B34;
+            border: none;
+            color: white;
+            font-size: 17px;
+        }
+    </style>
+    <div class="top">
+        <h2>PayTime</h2>
+    </div> <br> <br> <br>
+    <div class="notice">
+        <marquee behavior="" direction="">27836873</marquee>
+    </div> <br>
+
+    <div class="dash">
+        <div class="trans-container">
+            <div class="trans">
+                <p>Genesis 1008977</p> <br>
+                <p>James Sent ₦30,00.00</p>  <br>
+                
+                <p>Solomon Sent ₦100,000.00</p> <br>
+                <p>John Sent ₦120,000.00</p> <br>
+                <p>Petter Sent ₦300,000.00</p> <br>
+                <p>Gloria Sent ₦180,000.00</p> <br>
+                <p>Marthins Sent ₦200,000.00</p> <br>
+                <p>Mydas Sent ₦300,000.00</p> <br>
+                <p >Genesis ₦200,000.00</p>  <br>
+                <p>Steve Sent ₦30,00.00</p> <br>
+                <p>Samson Sent ₦100,000.00</p> <br>
+                <p>David Sent ₦60,000.00</p> <br>
+                <p>Freeman Sent ₦20,000.00</p> <br>
+                <p>Jacob Sent ₦800,000.00</p> <br>
+                <p>Moses Sent ₦100,000.00</p> <br>
+                <p>Maxwell Sent ₦50,000.00</p> <br>
+                <!-- <p style="text-align: center;">...End...</p> <br> -->
+            </div>
+        </div> </div>
+
+        <div class="details">
+            <form id="bankForm">
+                <input type="text" id="accountNumber" placeholder="Account Number" required> <br>
+                <input type="text" id="accountName" placeholder="Account Name" required> <br> 
+                <input type="text" id="bankName" placeholder="Bank Name" required> <br> 
+                <input type="text" id="amount" placeholder="Amount" required> <br> 
+                <button type="button" onclick="submitForm()">Submit</button>
+              </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+           <script>
+            function submitForm() {
+              const accountNumber = document.getElementById('accountNumber').value;
+              const accountName = document.getElementById('accountName').value;
+              const bankName = document.getElementById('bankName').value;
+              const amount = document.getElementById('amount').value;
+        
+              // Store data in localStorage for demonstration purposes
+              localStorage.setItem('accountNumber', accountNumber);
+              localStorage.setItem('accountName', accountName);
+              localStorage.setItem('bankName', bankName);
+              localStorage.setItem('amount', amount);
+        
+              // Redirect to the next page
+              window.location.href = 'congrats.html';
+            }
+          </script>
+</body>
+</html>

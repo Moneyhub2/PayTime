@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,600;1,500&family=Poppins:wght@400;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #003241;
+            color: white;
+        }
+        .box {
+            width: 70%;
+            height: fit-content;
+            margin: 0 auto;
+            margin-top: 30%;
+            /* background: #000; */
+        }
+        .box img {
+            width: 160px;
+            margin: 0 auto;
+            display: block;
+            position: relative;
+            top: -19px;
+
+        }
+        .btn {
+        margin: 0 auto;
+        display: block;
+        }
+        .btn button {
+            width: 90%;
+            height: 39px;
+            border: none;
+            background-color: rgb(16, 173, 16);
+            border-radius: 20px;
+            margin: 0 auto;
+        display: block;
+        }
+        .box button a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+    <div class="box">
+        <img src="img/download.png" alt="">
+        <h2 style="text-align: center;">Money sent</h2>
+        <p style="text-align: center;"> <p><span</span></p>You Just sent ₦<span  id="displayAmount"></span>  to your bank. you will receive alert shortly</p>
+     
+      
+  <div class="btn"> <br> <br>
+    <button><a href="welcome.html">letGo!</a></button>
+  </div>
+    </div>
+
+    <script>
+      // Retrieve data from localStorage
+   
+    
+    const amount = localStorage.getItem('amount');
+
+    // Display data on the page
+
+    document.getElementById('displayAmount').innerText = amount;
+
+        
+    </script>
+
+    
+      <script src="disabled.js"></script>
+
+      
+</body>
+</html>

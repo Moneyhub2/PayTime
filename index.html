@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <title>Cooool! </title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .box {
+            width: 99%;
+            height: 300px;
+            margin: 0 auto;
+            display: block;
+            /* background: #d3bcbc; */
+            position: relative;
+          right: 10px;
+        }
+        .box input {
+            width: 90%;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .box button {
+            width: 99%;
+            padding: 15px;
+            margin: 0 auto;
+            display: block;
+            background:  rgb(255, 166, 0);
+            font-size: 20px;
+            border: none;
+            border-radius: 30px;
+        }
+        .box h2 {
+            font-size: 30px;
+            color: White;
+        }
+        .box p {
+            position: relative;
+            top: -17px;
+            color: white;
+        }
+        span, a{
+          color: rgb(255, 166, 0);
+          text-decoration: dashed;
+        }
+        ::placeholder {
+          font-size: 19px;
+        }
+    </style>
+  <div class="container">
+    <div class="row">
+      <div class="cell size-3"></div>
+      <div class="cell size-2"></div>
+      <div class="cell size-7"></div>
+      <div class="cell size-6"></div>
+      <div class="cell size-10"></div>
+      <div class="cell size-6"></div>
+    </div>
+    <div class="row">
+      <div class="cell size-4"></div>
+      <div class="cell size-3"></div>
+      <div class="cell size-3"></div>
+      <div class="cell size-14 blue"></div>
+      <div class="cell size-6"></div>
+      <div class="cell size-4"></div>
+      <div class="cell size-6"></div>
+    </div>
+    <div class="row">
+      <div class="cell size-3"></div>
+      <div class="cell size-4"></div>
+      <div class="cell size-4 red"></div>
+      <div class="cell size-12 yellow"></div>
+      <div class="cell size-4"></div>
+      <div class="cell size-6"></div>
+    </div>
+    <div class="row">
+      <div class="cell size-4"></div>
+      <div class="cell size-4"></div>
+      <div class="cell size-6"></div>
+      <div class="cell size-8 blue"></div>
+      <div class="cell size-7 purple"></div>
+      <div class="cell size-2 blue"></div>
+      <div class="cell size-8"></div>
+      <div class="cell size-8"></div>
+    </div>
+    <div class="row">
+      <div class="cell size-6"></div>
+      <div class="cell size-2"></div>
+      <div class="cell size-4"></div>
+      <div class="cell size-2"></div>
+      <div class="cell size-6 yellow"></div>
+      <div class="cell size-6"></div>
+      <div class="cell size-6 red"></div>
+      <div class="cell size-2"></div>
+      <div class="cell size-14"></div>
+    </div>
+    <div class="row">
+      <div class="cell size-7"></div>
+      <div class="cell size-6"></div>
+      <div class="cell size-6 purple"></div>
+      <div class="cell size-6"></div>
+      <div class="cell size-6 yellow"></div>
+      <div class="cell size-14"></div>
+    </div>
+    <div class="row">
+      <div class="cell size-8"></div>
+      <div class="cell size-7"></div>
+      <div class="cell size-2"></div>
+      <div class="cell size-3 red"></div>
+      <div class="cell size-5 yellow"></div>
+      <div class="cell size-9 blue"></div>
+      <div class="cell size-10"></div>
+      <div class="cell size-2"></div>
+      <div class="cell size-6"></div>
+    </div>
+    <div class="row">
+      <div class="cell size-6"></div>
+      <div class="cell size-8"></div>
+      <div class="cell size-4"></div>
+      <div class="cell size-6 blue"></div>
+      <div class="cell size-6 red"></div>
+      <div class="cell size-4 purple"></div>
+      <div class="cell size-7"></div>
+      <div class="cell size-14"></div>
+    </div>
+    <div class="row">
+      <div class="cell size-6"></div>
+      <div class="cell size-8"></div>
+      <div class="cell size-2 purple"></div>
+      <div class="cell size-12 yellow"></div>
+      <div class="cell size-6"></div>
+      <div class="cell size-8"></div>
+      <div class="cell size-4"></div>
+    </div>
+    <div class="row">
+      <div class="cell size-5"></div>
+      <div class="cell size-2"></div>
+      <div class="cell size-3"></div>
+      <div class="cell size-7 purple"></div>
+      <div class="cell size-10"></div>
+      <div class="cell size-14"></div>
+    </div>
+    <div class="row">
+      <div class="cell size-8"></div>
+      <div class="cell size-3 blue"></div>
+      <div class="cell size-3 yellow"></div>
+      <div class="cell size-8"></div>
+      <div class="cell size-12"></div>
+    </div>
+    <div class="row">
+      <div class="cell size-5"></div>
+      <div class="cell size-3"></div>
+      <div class="cell size-2"></div>
+      <div class="cell size-7 red"></div>
+      <div class="cell size-14"></div>
+      <div class="cell size-10"></div>
+    </div>
+    <div class="row">
+      <div class="cell size-8"></div>
+      <div class="cell size-12"></div>
+      <div class="cell size-8"></div>
+      <div class="cell size-6"></div>
+    </div>
+  </div> <br>
+
+  <div class="box">
+    <form id="loginForm">
+    <h2>Welcome to  <span> PayTime</span></h2>
+    <P>Enter your login and password to continue</P>
+    
+    <input type="text" id="username" name="username" required placeholder="Your Full Name"> <br> <br>
+    <input type="password" id="password" name="password" required placeholder="password"><br> <br>
+    <button type="button" onclick="checkLogin()">Login</button>
+  </form> <br>
+    
+    <P>Need Help? <span><a href="more.html">click here</a></span></P>
+
+  </div>
+
+
+
+  <script>
+    // Retrieve the stored username from localStorage
+    var storedUsername = localStorage.getItem('savedUsername');
+    if (storedUsername) {
+      document.getElementById('username').value = storedUsername;
+    }
+
+    function checkLogin() {
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+
+      // Check if the password is correct (replace 'yourCustomPassword' with the actual password)
+      if (password === 'Paytimer##100@2023') {
+        // Save the entered username to localStorage
+        localStorage.setItem('savedUsername', username);
+
+        // Redirect to the next page (replace 'nextPage.html' with the actual page)
+        window.location.href = 'welcome.html';
+      } else {
+        // Display an alert if the password is incorrect
+        alert('Incorrect password. Please try again.');
+      }
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', function (event) {
+      event.preventDefault();
+    });
+
+    // Disable Control+U
+    document.addEventListener('keydown', function (event) {
+      if (event.ctrlKey && event.key === 'u') {
+        event.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>
